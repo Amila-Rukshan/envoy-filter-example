@@ -26,6 +26,8 @@ envoy_cc_library(
     repository = "@envoy",
     deps = [
         ":pkg_cc_proto",
+        "@envoy//source/common/network:filter_state_proxy_info_lib",
+        "@envoy//source/common/network:utility_lib",
         "@envoy//source/extensions/filters/http/common:pass_through_filter_lib",
     ],
 )
